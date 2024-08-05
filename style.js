@@ -1,18 +1,18 @@
 document.getElementById('multiplication-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Get input values
+    // To get our input values
     const x = parseFloat(document.getElementById('x').value);
     const y = parseFloat(document.getElementById('y').value);
     const maxZ = parseInt(document.getElementById('z').value, 10);
 
-    // Validate inputs
+    // To Validate inputs
     if (isNaN(x) || isNaN(y) || isNaN(maxZ) || maxZ < 1 || maxZ > 50) {
         alert('Think properly and enter a reasonable figure *z must be between 1 and 50*.');
         return;
     }
 
-    // Generate multiplication table
+    // Generates the table
     let resultDiv = document.getElementById('result');
     resultDiv.innerHTML = ''; // Clear previous results
 
@@ -47,5 +47,5 @@ document.getElementById('multiplication-form').addEventListener('submit', functi
     resultDiv.innerHTML = tableHTML;
 
     // Show success alert
-    alert('Calculation completed successfully!');
+    alert('Soft Work Clap for yourself!');
 });
